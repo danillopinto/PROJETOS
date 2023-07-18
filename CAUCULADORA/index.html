@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAUCULADORA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+        <main>  
+                <table>
+                    <tr>
+                        <td><button id="l1">&harr;</button></td>
+                        <td><button style="margin-bottom: 142px; background-color: orangered; border-radius: 7px; height: 30px; width: 30px; color: rgb(0, 0, 0);">=</button></td>
+                        <td><button id="l1">$</button></td>
+                        <td><button id="l1">&#65049;</button></td>
+                    </tr>
+
+                    <p id="resultado"></p>
+
+                    <p id="linha1">___________________________</p>
+
+                    <tr>
+                       <td><button id="button2" onclick="clean()">AC</button></td>
+                       <td><button id="button2" onclick="back()">&lt;</button></td>
+                       <td><button id="button2" onclick="insert('%')">%</button></td>                
+                       <td><button id="button2" style="font-family: 'Courier New', Courier, monospace; font-size: 35px;" onclick="insert('/')">&divide;</button></td>
+                    </tr>
+
+                    <tr>
+                       <td><button onclick="insert('7')">7</button></td>                       
+                       <td><button onclick="insert('8')">8</button></td>
+                       <td><button onclick="insert('9')">9</button></td>
+                       <td><button id="button2" style="font-size: 18px;" onclick="insert('*')">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button onclick="insert('4')">4</button></td>                       
+                        <td><button onclick="insert('5')">5</button></td>
+                        <td><button onclick="insert('6')">6</button></td>
+                        <td><button id="button2" style="font-family: 'Courier New', Courier, monospace; font-size: 30px;" onclick="insert('-')">-</button></td>
+                     </tr>
+
+                     <tr>
+                        <td><button onclick="insert('1')">1</button></td>                       
+                        <td><button onclick="insert('2')">2</button></td>
+                        <td><button onclick="insert('3')">3</button></td>
+                        <td><button style="font-family: 'Courier New', Courier, monospace; font-size: 34px; color: orangered;" onclick="insert('+')">+</button></td>
+                     </tr>
+
+                     <tr style="margin: 0px;">
+                        <td><button id="button2" style="margin-bottom: 0px;">&orarr;</button></td>                       
+                        <td><button style="margin-bottom: 0px;" onclick="insert('0')">0</button></td>
+                        <td><button style="margin-bottom: 0px;" onclick="insert(',')">,</button></td>
+                        <td><button style="border-radius: 50%; background-color: orangered; font-size: 25px; width: 45px; height: 45px; margin-bottom: 0px;" onclick="caucular()">=</button></td>
+                     </tr>
+
+                </table>
+
+               <b><p id="linha">_________</p></b>
+        </main>
+</body>
+</html>
