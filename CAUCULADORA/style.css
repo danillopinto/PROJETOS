@@ -21,14 +21,6 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.151);
 }
 
-#linha {
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-}
-
 h1 {
     color: white;
     padding: 125px 0px 0px 245px;
@@ -43,7 +35,7 @@ p {
 main {
     background-color: black;
     width: 300px;
-    height: 500px;
+    height: 485px;
     border-radius: 10px;
     position: fixed;
     left: 50%;
