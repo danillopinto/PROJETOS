@@ -9,13 +9,13 @@
     padding: 0px;
 }
 
-body {
+body,html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url('background002.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -45,12 +45,10 @@ h1 {
     font-weight: bold;
     font-style: italic;
     line-height: 1.99em;
-    font-size: 16px;
+    font-size: 17px;
     left: 50%;
     top: 350px;
     transform: translate(-50%,-50%);
-    min-width: 280px;
-    max-width: 400px;
 }
 
 #artigo2 {
@@ -60,8 +58,6 @@ h1 {
     top: 760px;
     transform: translate(-50%,-50%);
     padding: 8px;
-    min-width: 280px;
-    max-width: 400px;
 }
 
 #p2 {
@@ -143,6 +139,10 @@ h1 {
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+#artigo2, #artigo4 {
+
 }
 
 
