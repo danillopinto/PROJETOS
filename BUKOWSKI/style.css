@@ -141,7 +141,8 @@ h1 {
     height: 25px;
     margin-top: 1550px;
     text-align: center;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
