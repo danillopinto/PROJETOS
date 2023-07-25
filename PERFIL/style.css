@@ -6,6 +6,7 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
 }
 
 header {
@@ -103,7 +104,21 @@ p{
 input[type=button]#bt1:hover {
     color: seagreen;
     transition: 0.7s;
-    box-shadow: 0px 0px 20px 1px;
+    box-shadow: 0px 0px 10px 1px;
+    cursor: pointer;
+}
+
+input[type=button]#bt2:hover {
+    color: seagreen;
+    transition: 0.7s;
+    box-shadow: 0px 0px 10px 1px;
+    cursor: pointer;
+}
+
+input[type=button]#bt3:hover {
+    color: seagreen;
+    transition: 0.7s;
+    box-shadow: 0px 0px 10px 1px;
     cursor: pointer;
 }
 
