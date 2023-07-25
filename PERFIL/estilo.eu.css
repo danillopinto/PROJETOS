@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'font11' ;
+    src: url('PressStart2P-Regular.ttf') format('opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: 'font11';
+    text-align: center;
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+div {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+}
+ img {
+    margin-left: 7px;
+ }
