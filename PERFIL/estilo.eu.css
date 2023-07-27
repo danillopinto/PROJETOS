@@ -34,6 +34,8 @@ div {
  #animationD {
     transform: translateX(0px);
     animation: css 5s ease-out infinite;
+    z-index: -1;
+    position: relative;
  }
 
  @keyframes css {
@@ -51,6 +53,8 @@ div {
  #animationE {
     transform: translateX(0px);
     animation: html 5s ease-out infinite;
+    z-index: -1;
+    position: relative;
  }
 
  @keyframes html {

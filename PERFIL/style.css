@@ -3,7 +3,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: rgb(12, 12, 12);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -11,115 +11,100 @@ body {
 
 header {
     width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-figure {
-    position: absolute;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-}
-
-#img1 {
-    background-image: url('programming-coding.jpg');
-    background-size: 500px;
-    width: 100%;
-    height: 150px;
-    margin: 0px;
-    z-index: 1;
-}
-
-#img2 {
-    z-index: 2;
-    margin: 150px 0px 0px 0px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 16px black;
+    height: 63px;
+    background-color: black;
 }
 
 main {
     width: 500px;
-    height: 500px;
+    height: 300px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    background-color: black;
+    background-color: rgb(12, 12, 12);
 }
 
-h1 {
-    position: absolute;
-    font-size: 26px;
-    left: 50%;
-    top:190px;
-    transform: translate(-50%,-50%);
-}
+@media screen and (max-width: 500px) {
+    h1 {
+        position: absolute;
+        font-size: 40px;
+        left: 50%;
+        top:80px;
+        transform: translate(-50%,-50%);
+        width: 320px;
+    }
 
-p{
-    position: absolute;
-    left: 50%;
-    top: 222px;
-    transform: translate(-50%,-50%);
-    font-size: 14px;
-    color: seagreen;
+    p{
+        position: absolute;
+        left: 50%;
+        top: 120px;
+        transform: translate(-50%,-50%);
+        font-size: 25px;
+        color: rgba(255, 68, 0, 0.815);
+    }
+    
 }
 
 #insta:hover {
-    background-color: seagreen;
+    background-color: rgba(255, 68, 0, 0.452);
     transition: 0.7s;
-    padding: 1px;
+    padding: 7px;
     border-radius: 6px;
 }
 
 #insta { 
+    background-color: rgb(32, 32, 32);
+    padding: 7px;
+    border-radius: 5px;
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 234px;
-    top: 270px;
+    left: 28%;
+    top: 265px;
     transform: translate(-50%,-50%);
 }
 
 #lin:hover {
-    color: seagreen;
+    color: rgba(255, 68, 0, 0.452);
     transition: 0.7s;
 }
 
 #lin {
+    background-color: rgb(32, 32, 32);
+    padding: 2.3px 7px;
+    border-radius: 5px;
     position: absolute;
     font-size: 26px;
-    left: 265px;
-    top: 269px;
+    left: 37%;
+    top: 265px;
     transform: translate(-50%,-50%);
     text-decoration: none;
     color: white;
 }
 
 input[type=button]#bt1:hover {
-    color: seagreen;
+    color: rgba(255, 68, 0, 0.514);
     transition: 0.7s;
-    box-shadow: 0px 0px 10px 1px;
+    box-shadow: 0px 0px 20px 1px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 input[type=button]#bt2:hover {
-    color: seagreen;
+    color: rgba(255, 68, 0, 0.514);
     transition: 0.7s;
-    box-shadow: 0px 0px 10px 1px;
+    box-shadow: 0px 0px 20px 1px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 input[type=button]#bt3:hover {
-    color: seagreen;
+    color: rgba(255, 68, 0, 0.514);
     transition: 0.7s;
-    box-shadow: 0px 0px 10px 1px;
+    box-shadow: 0px 0px 20px 1px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 input[type=button]#bt1 {
@@ -131,7 +116,7 @@ input[type=button]#bt1 {
     transform: translate(-50%,-50%);
     font-size: 14px;
     border-radius: 3px;
-    border: 0px;
+    border: 1.5px solid rgba(255, 68, 0, 0.836);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
 
@@ -144,7 +129,7 @@ input[type=button]#bt2 {
     transform: translate(-50%,-50%);
     font-size: 14px;
     border-radius: 3px;
-    border: 0px;
+    border: 1.5px solid rgba(255, 68, 0, 0.836);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
 
@@ -157,9 +142,67 @@ input[type=button]#bt3 {
     transform: translate(-50%,-50%);
     font-size: 14px;
     border-radius: 3px;
-    border: 0px;
+    border: 1.5px solid rgba(255, 68, 0, 0.836);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
+
+#react {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 57.6%;
+    top: 178px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transform: translateY(0px);
+    animation: react 7s ease-in-out infinite;
+ }
+
+ @keyframes react {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+ }
+
+ 
+.pt {
+    color: rgba(255, 68, 0, 0);
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 68%;
+    top: 214px;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 80px 37px rgba(255, 68, 0, 0.514);
+    border-radius: 50%;
+    transform: translateY(0px);
+    animation: pt 7s ease-in-out infinite;
+}
+
+ @keyframes pt {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+ }
+
+#ds1 {
+    width: 220px;
+    font-size: 0px;
+    box-shadow: 0px 0px 25px 3px rgba(255, 68, 0, 0.514);
+    margin-top: 22px;
+}
 
 
 
