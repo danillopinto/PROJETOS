@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'font11' ;
+    src: url('BurmaOutline-Regular.ttf') format('TrueType');
+}
 
 * {
     margin: 0px;
@@ -11,21 +15,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-    width: 100%;
-    height: 510px;
-    background-color: rgb(12, 12, 12);
-}
-
-section {
-    width: 100%;
-    height: 500px;
-    background-color: rgb(7, 7, 7);
-}
-
 /*TELA PEQUENA*/
 
 @media screen and (max-width: 800px) {
+
+    main {
+        width: 100%;
+        height: 510px;
+        background-color: rgb(12, 12, 12);
+    }
+    
+    section {
+        width: 100%;
+        height: 500px;
+        background-color: rgb(7, 7, 7);
+    }
+
     h1 {
         font-size: 40px;
         width: 320px;
@@ -36,8 +41,8 @@ section {
     }
 
     #p1{
-        font-size: 26px;
-        color: #f27405;
+        font-size: 27px;
+        color: #a74f03;
         position: absolute;
         top: 52%;
         left: 57%;
@@ -49,6 +54,7 @@ section {
         width: 100%;
         height: 65px;
         background-color: rgba(5, 5, 5);
+        box-shadow: 20 20 20px rgb(252, 250, 250);
     }
 
     #insta { 
@@ -102,19 +108,83 @@ section {
     #pisca {
         position: absolute;
         top: 52%;
-        left: 74%;
+        left: 76%;
         transform: translate(-50%, -50%);
         font-size: 25px;
-        color: #F27405;
-        font-weight: 600;
+        color: #a74f03;
+        font-weight: 500;
         animation: piscaPisca 0.7s infinite;
     }
 
     @keyframes piscaPisca {
-        0% {color: #F27405;}
-        50% {color: #F27405;}
+        0% {color: #a74f03;}
+        50% {color: #a74f03;}
         100% {color: rgb(12, 12, 12);}
     }
+
+    input[type=button]#bt1:hover {
+        color: #a74f03;
+        transition: 0.7s;
+        box-shadow: 0px 0px 20px 1px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    input[type=button]#bt2:hover {
+        color: #a74f03;
+        transition: 0.7s;
+        box-shadow: 0px 0px 20px 1px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    input[type=button]#bt3:hover {
+        color: #a74f03;
+        transition: 0.7s;
+        box-shadow: 0px 0px 20px 1px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    input[type=button]#bt1 {
+        width: 390px;
+        height: 60px;
+        position: absolute;
+        left: 50%;
+        top: 700px;
+        transform: translate(-50%,-50%);
+        font-size: 14px;
+        border-radius: 3px;
+        border: 1.5px solid #a74f03;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    } 
+    
+    input[type=button]#bt2 {
+        width: 390px;
+        height: 60px;
+        position: absolute;
+        left: 50%;
+        top: 770px;
+        transform: translate(-50%,-50%);
+        font-size: 14px;
+        border-radius: 3px;
+        border: 1.5px solid #a74f03;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    } 
+    
+    input[type=button]#bt3 {
+        width: 390px;
+        height: 60px;
+        position: absolute;
+        left: 50%;
+        top: 840px;
+        transform: translate(-50%,-50%);
+        font-size: 14px;
+        border-radius: 3px;
+        border: 1.5px solid #a74f03;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    } 
+    
 }
 
 /*TELA GRANDE*/
