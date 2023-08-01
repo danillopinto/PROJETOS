@@ -45,9 +45,13 @@ body {
         color: #a74f03;
         position: absolute;
         top: 52%;
-        left: 57%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        width: 320px;
+        width: 250px;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        text-shadow: 0px 0px 5px #a74f03;
     }
     
     header {
@@ -59,21 +63,14 @@ body {
 
     #insta { 
         background-color: rgb(32, 32, 32);
-        padding: 7px;
+        padding: 6px;
         border-radius: 5px;
         position: absolute;
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         left: 54%;
         top: 60%;
         transform: translate(-50%,-50%);
-    }
-
-    #insta:hover {
-        background-color: #f27405;
-        transition: 0.7s;
-        padding: 7px;
-        border-radius: 6px;
     }
 
     #lin {
@@ -81,28 +78,12 @@ body {
         padding: 2.3px 7px;
         border-radius: 5px;
         position: absolute;
-        font-size: 26px;
+        font-size: 27px;
         left: 43%;
         top: 60%;
         transform: translate(-50%,-50%);
         text-decoration: none;
         color: white;
-    }
-
-    #lin:hover {
-        color: #f27405;
-        transition: 0.7s;
-    }
-
-    #ds1 {
-        color: rgba(255, 255, 255, 0);
-        width: 260px;
-        font-size: 0px;
-        box-shadow: 0px 0px 25px 1.5px #F27405, inset 0px 0px 25px 1.5px #F27405;
-        position: absolute;
-        top: 52%;
-        left: 48%;
-        transform: translate(-50%, -50%);
     }
 
     #pisca {
@@ -114,6 +95,7 @@ body {
         color: #a74f03;
         font-weight: 500;
         animation: piscaPisca 0.7s infinite;
+        text-shadow: 0px 0px 5px #a74f03;
     }
 
     @keyframes piscaPisca {
