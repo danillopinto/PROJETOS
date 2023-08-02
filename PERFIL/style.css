@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'font11' ;
-    src: url('BurmaOutline-Regular.ttf') format('TrueType');
+    src: url('Saira-VariableFont_wdth,wght.ttf') format('TrueType');
 }
 
 * {
@@ -12,7 +12,7 @@
 body {
     background-color: rgb(12, 12, 12);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: font11, Helvetica, sans-serif ;
 }
 
 /*TELA PEQUENA*/
@@ -32,7 +32,7 @@ body {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 41px;
         width: 320px;
         position: absolute;
         top: 45%;
@@ -43,15 +43,23 @@ body {
     #p1{
         font-size: 27px;
         color: #a74f03;
-        position: absolute;
-        top: 52%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         width: 250px;
         padding: 0px;
         margin: 0px;
         border: 0px;
         text-shadow: 0px 0px 5px #a74f03;
+    }
+
+    #divpisca {
+        width: 300px;
+        position: absolute;
+        top: 52%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+    }
+
+    p {
+        display: inline-block;
     }
     
     header {
@@ -63,11 +71,11 @@ body {
 
     #insta { 
         background-color: rgb(32, 32, 32);
-        padding: 6px;
+        padding: 7px;
         border-radius: 5px;
         position: absolute;
-        width: 25px;
-        height: 25px;
+        width: 22px;
+        height: 22px;
         left: 54%;
         top: 60%;
         transform: translate(-50%,-50%);
@@ -75,10 +83,11 @@ body {
 
     #lin {
         background-color: rgb(32, 32, 32);
-        padding: 2.3px 7px;
+        padding: 0px 7px;
+        height: 36.5px;
         border-radius: 5px;
         position: absolute;
-        font-size: 27px;
+        font-size: 28px;
         left: 43%;
         top: 60%;
         transform: translate(-50%,-50%);
@@ -87,21 +96,26 @@ body {
     }
 
     #pisca {
-        position: absolute;
-        top: 52%;
-        left: 76%;
-        transform: translate(-50%, -50%);
-        font-size: 25px;
+        font-size: 30px;
         color: #a74f03;
         font-weight: 500;
         animation: piscaPisca 0.7s infinite;
-        text-shadow: 0px 0px 5px #a74f03;
+        
     }
 
     @keyframes piscaPisca {
-        0% {color: #a74f03;}
-        50% {color: #a74f03;}
-        100% {color: rgb(12, 12, 12);}
+        0% {
+            color: #a74f03;
+            text-shadow: 0px 0px 5px #a74f03;
+        }
+        50% {
+            color: rgb(12, 12, 12);
+            text-shadow: 0px 0px 5px rgb(12, 12, 12);
+        }
+        100% {
+            color: #a74f03;
+            text-shadow: 0px 0px 5px #a74f03;
+        }
     }
 
     input[type=button]#bt1:hover {
