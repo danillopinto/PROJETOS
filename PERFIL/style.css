@@ -4,9 +4,15 @@
     src: url('Saira-VariableFont_wdth,wght.ttf') format('TrueType');
 }
 
+@font-face {
+    font-family: 'font10' ;
+    src: url('Patrima-Outline.otf') format('OpenType');
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,9 +21,76 @@ body {
     font-family: font11, Helvetica, sans-serif ;
 }
 
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    margin: 5px 20px auto;
+}
+
 /*TELA PEQUENA*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 590px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 65px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: rgb(5, 5, 5);
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
 
     main {
         width: 100%;
@@ -81,18 +154,20 @@ body {
         transform: translate(-50%,-50%);
     }
 
+
     #lin {
         background-color: rgb(32, 32, 32);
-        padding: 0px 7px;
-        height: 36.5px;
+        padding: 0px 4.5px;
+        height: 36px;
         border-radius: 5px;
         position: absolute;
-        font-size: 28px;
+        font-size: 31px;
         left: 43%;
         top: 60%;
         transform: translate(-50%,-50%);
         text-decoration: none;
         color: white;
+        font-family: font10;
     }
 
     #pisca {
