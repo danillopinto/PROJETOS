@@ -44,7 +44,6 @@ body {
 .bar {
     display: block;
     width: 27px;
-    height: 3px;
     border-radius: 2px;
     background-color: white;
     transition: all 0.3s ease-in-out;
@@ -120,10 +119,24 @@ body {
     
     section {
         width: 100%;
-        height: 500px;
+        height: 400px;
         background-color: rgb(7, 7, 7);
-        position: absolute;
-        top: 500px;
+    }
+
+    main {
+        height: 360px;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    #sobreMim {
+        padding: 50px;
+        text-align: center;
+        font-size: 17px;
     }
 
     h1 {
@@ -154,11 +167,12 @@ body {
         height: 65px;
         background-color: rgba(5, 5, 5);
         position: fixed;
+        box-shadow: 0px 0px 10px 1px rgba(88, 88, 88, 0.24);
     }
 
     #insta { 
         background-color: rgb(32, 32, 32);
-        padding: 7px;
+        padding: 6px;
         border-radius: 5px;
         width: 37px;
         height: 37px;
@@ -176,12 +190,11 @@ body {
 
     #lin {
         background-color: rgb(32, 32, 32);
-        padding: 0px 4.5px;
         border-radius: 5px;
-        text-decoration: none;
-        color: white;
-        font-family: font10;
-        font-size: 31px;
+        padding: 5px;
+        height: 37px;
+        width: 37px;
+        
     }
 
     #pisca {
