@@ -24,16 +24,10 @@ body {
 .hamburguer {
     display: none;
     cursor: pointer;
-    position: absolute;
     position: fixed;
 }
 
-.navbar {
-    min-height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
+
 
 .nav-link {
     text-decoration: none;
@@ -52,7 +46,21 @@ body {
 
 /*TELA PEQUENA*/
 
+@media screen and (max-width: 400px) {
+    main {
+        margin-bottom: 100px;
+    }
+}
+
 @media screen and (max-width: 590px) {
+
+    .navbar {
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
     .hamburguer {
         display: block;
     }
@@ -83,10 +91,6 @@ body {
         padding-bottom: 10px;
     }
 
-    .nav-item {
-        margin: 16px 0px;
-    }
-
     nav a::after {
         content: " ";
         width: 0%;
@@ -107,7 +111,7 @@ body {
     li {
         list-style: none;
         padding: 4px 0px;
-        font-size: 19px;
+        font-size: 15x;
     }
 
     .nav-menu.active {
@@ -222,173 +226,43 @@ body {
 
 /*TELA GRANDE*/
 
-/*
+
+@media screen and (min-width: 600px) {
+
+li {
+    list-style: none;
+    padding: 19px 20px;
+    display: inline-block;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 3px;
+    text-align: center;
+    width: 100%;
+}
 
 header {
+    top: 0px;
+}
+
+nav a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #a74f03;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #241101, #a74f03);
+}
+
+nav a:hover::after {
     width: 100%;
-    height: 63px;
-    background-color: black;
+    transition: 0.4s;
+
 }
 
-#insta:hover {
-    background-color: rgba(255, 68, 0, 0.452);
-    transition: 0.7s;
-    padding: 7px;
-    border-radius: 6px;
 }
-
-#insta { 
-    background-color: rgb(32, 32, 32);
-    padding: 7px;
-    border-radius: 5px;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 28%;
-    top: 265px;
-    transform: translate(-50%,-50%);
-}
-
-#lin:hover {
-    color: rgba(255, 68, 0, 0.452);
-    transition: 0.7s;
-}
-
-#lin {
-    background-color: rgb(32, 32, 32);
-    padding: 2.3px 7px;
-    border-radius: 5px;
-    position: absolute;
-    font-size: 26px;
-    left: 37%;
-    top: 265px;
-    transform: translate(-50%,-50%);
-    text-decoration: none;
-    color: white;
-}
-
-input[type=button]#bt1:hover {
-    color: rgba(255, 68, 0, 0.514);
-    transition: 0.7s;
-    box-shadow: 0px 0px 20px 1px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-input[type=button]#bt2:hover {
-    color: rgba(255, 68, 0, 0.514);
-    transition: 0.7s;
-    box-shadow: 0px 0px 20px 1px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-input[type=button]#bt3:hover {
-    color: rgba(255, 68, 0, 0.514);
-    transition: 0.7s;
-    box-shadow: 0px 0px 20px 1px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-input[type=button]#bt1 {
-    width: 440px;
-    height: 60px;
-    position: absolute;
-    left: 50%;
-    top: 340px;
-    transform: translate(-50%,-50%);
-    font-size: 14px;
-    border-radius: 3px;
-    border: 1.5px solid rgba(255, 68, 0, 0.836);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
-
-input[type=button]#bt2 {
-    width: 440px;
-    height: 60px;
-    position: absolute;
-    left: 50%;
-    top: 413px;
-    transform: translate(-50%,-50%);
-    font-size: 14px;
-    border-radius: 3px;
-    border: 1.5px solid rgba(255, 68, 0, 0.836);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
-
-input[type=button]#bt3 {
-    width: 440px;
-    height: 60px;
-    position: absolute;
-    left: 50%;
-    top: 485px;
-    transform: translate(-50%,-50%);
-    font-size: 14px;
-    border-radius: 3px;
-    border: 1.5px solid rgba(255, 68, 0, 0.836);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
-
-#react {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    left: 57.6%;
-    top: 178px;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    transform: translateY(0px);
-    animation: react 7s ease-in-out infinite;
- }
-
- @keyframes react {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
- }
-
- 
-.pt {
-    color: rgba(255, 68, 0, 0);
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    left: 68%;
-    top: 214px;
-    transform: translate(-50%,-50%);
-    box-shadow: 0px 0px 80px 37px rgba(255, 68, 0, 0.514);
-    border-radius: 50%;
-    transform: translateY(0px);
-    animation: pt 7s ease-in-out infinite;
-}
-
- @keyframes pt {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
- }
-
-#ds1 {
-    width: 220px;
-    font-size: 0px;
-    box-shadow: 0px 0px 25px 3px rgba(255, 68, 0, 0.514);
-    margin-top: 22px;
-}
-
-*/
-
 
 
