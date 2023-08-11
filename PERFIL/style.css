@@ -41,7 +41,7 @@ body {
     border-radius: 2px;
     background-color: white;
     transition: all 0.3s ease-in-out;
-    margin: 5px 20px auto;
+    margin: 4.8px 20px auto;
 }
 
 /*TELA PEQUENA*/
@@ -230,7 +230,7 @@ body {
 /*TELA GRANDE*/
 
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
 
 li {
     list-style: none;
@@ -279,5 +279,212 @@ main {
 }
 
 }
+
+
+.dc {
+    width: 0px;
+    height: 0px;
+}
+
+@media screen and (min-width: 850px) {
+    .dc {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 10%;
+        left: 55%;
+    }
+
+    
+li {list-style: none;
+    padding: 19px 20px;
+    display: inline-block;
+}
+
+section {
+    max-height: 350px;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 3px;
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    top: 0;
+}
+
+nav a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #a74f03;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #241101, #a74f03);
+}
+
+nav a:hover::after {
+    width: 100%;
+    transition: 0.4s;
+
+}
+
+main {
+    margin-top: 220px;
+}
+
+#sobreMim {
+    text-align: center;
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 65px;
+    gap: 0;
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(5, 5, 5);
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.3s;
+    padding-bottom: 10px;
+}
+
+nav a::after {
+    content: " ";
+    width: 0%;
+    height: 1.2px;
+    background-color: #a74f03;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #241101, #a74f03);
+}
+
+nav a:hover::after {
+    width: 100%;
+    transition: 0.4s;
+
+}
+
+li {
+    list-style: none;
+    padding: 4px 0px;
+    font-size: 15x;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+section {
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+}
+
+main {
+    height: 360px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+#sobreMim {
+    padding: 30px 50px 40px 50px;
+    text-align: center;
+    font-size: 17px;
+}
+
+h1 {
+    font-size: 52px;
+    margin-top: 150px;
+    height: 50px;
+    margin-left: 10%;
+}
+
+#p1{
+    font-size: 35px;
+    color: #a74f03;
+    text-shadow: 0px 0px 5px #a74f03;
+}
+
+#divpisca {
+    margin-left: 10%;
+    margin-top: 8px;
+}
+
+p {
+    display: inline-block;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    background-color: rgba(5, 5, 5);
+    position: fixed;
+    box-shadow: 0px 0px 10px 1px rgba(88, 88, 88, 0.24);
+}
+
+#insta { 
+    background-color: rgb(32, 32, 32);
+    padding: 6px;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+
+}
+
+#divA {
+    margin-left: 10%;
+}
+
+#lin {
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    
+}
+
+#pisca {
+    font-size: 34px;
+    color: #a74f03;
+    font-weight: 500;
+    animation: piscaPisca 0.7s infinite;
+}
+
+@keyframes piscaPisca {
+    0% {
+        color: #a74f03;
+        text-shadow: 0px 0px 5px #a74f03;
+    }
+    50% {
+        color: rgb(12, 12, 12);
+        text-shadow: 0px 0px 5px rgb(12, 12, 12);
+    }
+    100% {
+        color: #a74f03;
+        text-shadow: 0px 0px 5px #a74f03;
+    }
+}
+
+}
+
 
 
