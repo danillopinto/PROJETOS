@@ -41,7 +41,15 @@ body {
     border-radius: 2px;
     background-color: white;
     transition: all 0.3s ease-in-out;
-    margin: 4.8px 20px auto;
+    margin: 4.4px 20px auto;
+}
+
+.hamburguer:hover {
+    
+    .bar {
+        background-color: #a74f03;
+        transition: 0.3s;
+    }
 }
 
 /*TELA PEQUENA*/
@@ -50,12 +58,16 @@ body {
     main {
         margin-bottom: 100px;
     }
+
+    section {
+      
+    }
 }
 
 @media screen and (max-width: 600px) {
 
     section {
-        max-height: 420px;
+        max-height: 500px;
     }
 
     .navbar {
@@ -123,7 +135,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 849px) {
     
     section {
         width: 100%;
@@ -131,7 +143,7 @@ body {
     }
 
     main {
-        height: 360px;
+        height: 412px;
     }
 
     h2 {
@@ -286,13 +298,14 @@ main {
     height: 0px;
 }
 
-@media screen and (min-width: 850px) {
+@media (min-width: 850px) {
     .dc {
         width: 500px;
         height: 500px;
+        z-index: 0;
         position: absolute;
-        top: 10%;
-        left: 55%;
+        left: 50%;
+        top: 100px;
     }
 
     
@@ -310,17 +323,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: end;
-}
-
-.nav-menu {
-    position: fixed;
-    top: 3px;
-    text-align: center;
-    width: 100%;
-}
-
-header {
-    top: 0;
 }
 
 nav a::after {
@@ -342,6 +344,7 @@ nav a:hover::after {
 
 main {
     margin-top: 220px;
+    width: 100%;
 }
 
 #sobreMim {
@@ -349,17 +352,14 @@ main {
 }
 
 .nav-menu {
+    font-size: 19px;
+    margin: 10px 0px;
     position: fixed;
-    left: -100%;
-    top: 65px;
-    gap: 0;
-    border-radius: 0 0 20px 20px;
-    background-color: rgb(5, 5, 5);
-    text-align: center;
-    flex-direction: column;
-    width: 100%;
-    transition: 0.3s;
-    padding-bottom: 10px;
+    z-index: 2;
+}
+
+.nav-item {
+    margin: 0px 30px;
 }
 
 nav a::after {
@@ -396,6 +396,7 @@ section {
 
 main {
     height: 360px;
+    width: 100%;
 }
 
 h2 {
@@ -438,6 +439,7 @@ header {
     background-color: rgba(5, 5, 5);
     position: fixed;
     box-shadow: 0px 0px 10px 1px rgba(88, 88, 88, 0.24);
+    z-index: 1;
 }
 
 #insta { 
