@@ -250,10 +250,6 @@ li {
     display: inline-block;
 }
 
-section {
-    max-height: 350px;
-}
-
 .nav-menu {
     position: fixed;
     top: 3px;
@@ -352,6 +348,11 @@ main {
     width: 60%;
 }
 
+
+.divH2 {
+    display: inline-block;
+}
+
 .nav-menu {
     font-size: 19px;
     margin: 10px 0px;
@@ -380,6 +381,10 @@ nav a:hover::after {
 
 }
 
+a {
+    margin-right: 10px;
+}
+
 li {
     list-style: none;
     padding: 4px 0px;
@@ -393,6 +398,7 @@ li {
 section {
     width: 100%;
     background-color: rgb(7, 7, 7);
+    max-height: 600px;
 }
 
 main {
@@ -408,7 +414,6 @@ h2 {
 
 #sobreMim {
     padding: 30px 50px 40px 50px;
-    text-align: center;
     font-size: 17px;
 }
 
@@ -449,7 +454,6 @@ header {
     border-radius: 5px;
     width: 40px;
     height: 40px;
-
 }
 
 #divA {
@@ -463,6 +467,14 @@ header {
     height: 40px;
     width: 40px;
     
+}
+
+#git {
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
 }
 
 #pisca {
@@ -485,6 +497,22 @@ header {
         color: #a74f03;
         text-shadow: 0px 0px 5px #a74f03;
     }
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    left: 80%;
+    top: 800px;
+}
+
+.td1 {
+    border: 1px solid white;
+}
+
+td {
+    width: 20px;
+    height: 20px;
 }
 
 }
