@@ -59,16 +59,9 @@ body {
         margin-bottom: 100px;
     }
 
-    section {
-      
-    }
 }
 
 @media screen and (max-width: 600px) {
-
-    section {
-        max-height: 500px;
-    }
 
     .navbar {
         min-height: 70px;
@@ -133,29 +126,55 @@ body {
     .nav-menu.active {
         left: 0;
     }
-}
 
-@media screen and (max-width: 849px) {
+    #barraG {
+        position: absolute;
+        left: 50%;
+        top: 695px;
+        transform: translate(-50%, -50%);
+    }
     
-    section {
-        width: 100%;
-        background-color: rgb(7, 7, 7);
+    .barra1 {
+        width: 35px;
+        height: 3px;
+        background-color: #a74f03;
+        margin: 3px;
+        border-radius: 10px;
+        display: block;
+    }
+    
+    .barra2 {
+        width: 35px;
+        height: 3px;
+        background-color: #a74f03;
+        margin: 3px;
+        border-radius: 10px;
+        display: block;
     }
 
-    main {
-        height: 412px;
+    #sobreMim {
+        font-size: 17px;
+        position: absolute;
+        top: 750px;
+        padding: 0px 50px;
+        text-align: center;
+    }
+
+    section {
+        height: 450px;
+        background-color: rgb(7, 7, 7);
     }
 
     h2 {
         font-size: 30px;
-        text-align: center;
-        padding-top: 35px;
     }
 
-    #sobreMim {
-        padding: 30px 50px 40px 50px;
-        text-align: center;
-        font-size: 17px;
+}
+
+@media screen and (max-width: 849px) {
+
+    main {
+        height: 412px;
     }
 
     h1 {
@@ -196,6 +215,14 @@ body {
         width: 37px;
         height: 37px;
         margin-top: 10px;
+    }
+
+    #git {
+        background-color: rgb(32, 32, 32);
+        border-radius: 5px;
+        padding: 5px;
+        height: 40px;
+        width: 40px;
     }
 
     #divA {
@@ -242,7 +269,45 @@ body {
 /*TELA GRANDE*/
 
 
-@media (min-width: 600px) {
+@media (min-width: 601px){
+
+    #barraG {
+        position: absolute;
+        left: 50%;
+        top: 695px;
+        transform: translate(-50%, -50%);
+    }
+    
+    .barra1 {
+        width: 45px;
+        height: 4px;
+        background-color: #a74f03;
+        margin: 3px;
+        border-radius: 10px;
+        display: block;
+    }
+    
+    .barra2 {
+        width: 45px;
+        height: 4px;
+        background-color: #a74f03;
+        margin: 3px;
+        border-radius: 10px;
+        display: block;
+    }
+
+    section {
+        height: 400px;
+        background-color: rgb(7, 7, 7);
+    }
+
+    #sobreMim {
+        font-size: 17px;
+        position: absolute;
+        top: 750px;
+        padding: 0px 50px;
+        text-align: center;
+    }
 
 li {
     list-style: none;
@@ -282,10 +347,6 @@ main {
     margin-top: 220px;
 }
 
-#sobreMim {
-    text-align: center;
-}
-
 }
 
 
@@ -310,16 +371,18 @@ li {list-style: none;
     display: inline-block;
 }
 
-section {
-    max-height: 350px;
-}
-
 .navbar {
     min-height: 70px;
     display: flex;
     align-items: center;
     justify-content: end;
 }
+
+#sobreMim {
+    margin-left: 100px;
+    width: 60%;
+}
+
 
 nav a::after {
     content: " ";
@@ -341,11 +404,6 @@ nav a:hover::after {
 main {
     margin-top: 220px;
     width: 100%;
-}
-
-#sobreMim {
-    margin-left: 100px;
-    width: 60%;
 }
 
 
@@ -398,7 +456,7 @@ li {
 section {
     width: 100%;
     background-color: rgb(7, 7, 7);
-    max-height: 600px;
+    height: 400px;
 }
 
 main {
@@ -413,8 +471,10 @@ h2 {
 }
 
 #sobreMim {
-    padding: 30px 50px 40px 50px;
     font-size: 17px;
+    position: absolute;
+    top: 790px;
+    right: 35%;
 }
 
 h1 {
@@ -502,20 +562,50 @@ header {
 table {
     border-collapse: collapse;
     position: absolute;
-    left: 80%;
-    top: 800px;
+    left: 70%;
+    top: 720px;
+}
+
+.td2 {
+    background-color: white;
+}
+
+td {
+    width: 18px;
+    height: 18px;
 }
 
 .td1 {
     border: 1px solid white;
 }
 
-td {
-    width: 20px;
-    height: 20px;
+#barraG {
+    position: absolute;
+    left: 50%;
+    top: 695px;
+    transform: translate(-50%, -50%);
+}
+
+.barra1 {
+    width: 45px;
+    height: 4px;
+    background-color: #a74f03;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.barra2 {
+    width: 45px;
+    height: 4px;
+    background-color: #a74f03;
+    margin: 3px;
+    border-radius: 10px;
 }
 
 }
 
-
-
+#HABILIDADES {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(12, 12, 12);
+}
