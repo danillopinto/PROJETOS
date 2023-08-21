@@ -1,56 +1,5 @@
 @charset "UTF-8";
-@font-face {
-    font-family: 'font11' ;
-    src: url('Saira-VariableFont_wdth,wght.ttf') format('TrueType');
-}
 
-@font-face {
-    font-family: 'font10' ;
-    src: url('Patrima-Outline.otf') format('OpenType');
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: rgb(12, 12, 12);
-    color: white;
-    font-family: font11, Helvetica, sans-serif ;
-}
-
-.hamburguer {
-    display: none;
-    cursor: pointer;
-    position: fixed;
-}
-
-
-
-.nav-link {
-    text-decoration: none;
-    color: white;
-    position: relative;
-}
-
-.bar {
-    display: block;
-    width: 27px;
-    border-radius: 2px;
-    background-color: white;
-    transition: all 0.3s ease-in-out;
-    margin: 4.4px 20px auto;
-}
-
-.hamburguer:hover {
-    
-    .bar {
-        background-color: #a74f03;
-        transition: 0.3s;
-    }
-}
 
 /*TELA PEQUENA*/
 
@@ -59,6 +8,9 @@ body {
         margin-bottom: 100px;
     }
 
+    section {
+        height: 600px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -127,31 +79,6 @@ body {
         left: 0;
     }
 
-    #barraG {
-        position: absolute;
-        left: 50%;
-        top: 695px;
-        transform: translate(-50%, -50%);
-    }
-    
-    .barra1 {
-        width: 35px;
-        height: 3px;
-        background-color: #a74f03;
-        margin: 3px;
-        border-radius: 10px;
-        display: block;
-    }
-    
-    .barra2 {
-        width: 35px;
-        height: 3px;
-        background-color: #a74f03;
-        margin: 3px;
-        border-radius: 10px;
-        display: block;
-    }
-
     #sobreMim {
         font-size: 17px;
         position: absolute;
@@ -160,21 +87,28 @@ body {
         text-align: center;
     }
 
-    section {
-        height: 450px;
-        background-color: rgb(7, 7, 7);
-    }
-
     h2 {
         font-size: 30px;
     }
 
+    section {
+        height: 450px;
+        background-color: rgb(7, 7, 7);
+    }
 }
 
 @media screen and (max-width: 849px) {
 
+    .dc {
+        display: none;
+    }
+
     main {
         height: 412px;
+    }
+
+    h2 {
+        font-size: 30px;
     }
 
     h1 {
@@ -206,6 +140,18 @@ body {
         background-color: rgba(5, 5, 5);
         position: fixed;
         box-shadow: 0px 0px 10px 1px rgba(88, 88, 88, 0.24);
+        z-index: 1;
+    }
+
+    section {
+        z-index: 0;
+    }
+
+    .hamburguer {
+        z-index: 2;
+    }
+    .nav-menu {
+        z-index: 3;
     }
 
     #insta { 
@@ -271,31 +217,6 @@ body {
 
 @media (min-width: 601px){
 
-    #barraG {
-        position: absolute;
-        left: 50%;
-        top: 695px;
-        transform: translate(-50%, -50%);
-    }
-    
-    .barra1 {
-        width: 45px;
-        height: 4px;
-        background-color: #a74f03;
-        margin: 3px;
-        border-radius: 10px;
-        display: block;
-    }
-    
-    .barra2 {
-        width: 45px;
-        height: 4px;
-        background-color: #a74f03;
-        margin: 3px;
-        border-radius: 10px;
-        display: block;
-    }
-
     section {
         height: 400px;
         background-color: rgb(7, 7, 7);
@@ -347,12 +268,10 @@ main {
     margin-top: 220px;
 }
 
+.hamburguer {
+    display: none;
 }
 
-
-.dc {
-    width: 0px;
-    height: 0px;
 }
 
 @media (min-width: 850px) {
@@ -579,28 +498,7 @@ td {
     border: 1px solid white;
 }
 
-#barraG {
-    position: absolute;
-    left: 50%;
-    top: 695px;
-    transform: translate(-50%, -50%);
-}
 
-.barra1 {
-    width: 45px;
-    height: 4px;
-    background-color: #a74f03;
-    margin: 3px;
-    border-radius: 10px;
-}
-
-.barra2 {
-    width: 45px;
-    height: 4px;
-    background-color: #a74f03;
-    margin: 3px;
-    border-radius: 10px;
-}
 
 }
 

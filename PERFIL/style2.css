@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'font11' ;
+    src: url('Saira-VariableFont_wdth,wght.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: 'font10' ;
+    src: url('Patrima-Outline.otf') format('OpenType');
+}
+
+/*GERAL*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-family: font11, Helvetica, sans-serif ;
+}
+
+.hamburguer {
+    cursor: pointer;
+    position: fixed;
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.bar {
+    display: block;
+    width: 27px;
+    border-radius: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    margin: 4.4px 20px auto;
+}
+
+.hamburguer:hover {
+    
+    .bar {
+        background-color: #a74f03;
+        transition: 0.3s;
+    }
+}
+
+
+
+#barraG {
+    position: absolute;
+    left: 50%;
+    top: 695px;
+    transform: translate(-50%, -50%);
+}
+
+.barra1 {
+    width: 45px;
+    height: 4px;
+    background-color: #a74f03;
+    margin: 3px;
+    border-radius: 10px;
+    display: block;
+}
+
+.barra2 {
+    width: 45px;
+    height: 4px;
+    background-color: #a74f03;
+    margin: 3px;
+    border-radius: 10px;
+    display: block;
+}
