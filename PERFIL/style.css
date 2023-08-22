@@ -4,16 +4,36 @@
 /*TELA PEQUENA*/
 
 @media screen and (max-width: 400px) {
+
     main {
         margin-bottom: 100px;
     }
 
-    section {
-        height: 600px;
+    #barraGG {
+        position: absolute;
+        left: 50%;
+        top: 650px;
+        transform: translate(-50%, -50%);
+        height: 50px;
+        width: 100%;
+        background-color: rgb(7, 7, 7);
     }
 }
 
 @media screen and (max-width: 600px) {
+
+    section {
+        height: 500px;
+        background-color: rgb(7, 7, 7);
+    }
+
+    #sobreMim {
+        font-size: 19px;
+        position: absolute;
+        top: 730px;
+        padding: 0px 50px;
+        text-align: center;
+    }
 
     .navbar {
         min-height: 70px;
@@ -79,22 +99,6 @@
         left: 0;
     }
 
-    #sobreMim {
-        font-size: 17px;
-        position: absolute;
-        top: 750px;
-        padding: 0px 50px;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    section {
-        height: 450px;
-        background-color: rgb(7, 7, 7);
-    }
 }
 
 @media screen and (max-width: 849px) {
@@ -109,6 +113,7 @@
 
     h2 {
         font-size: 30px;
+
     }
 
     h1 {
@@ -223,7 +228,7 @@
     }
 
     #sobreMim {
-        font-size: 17px;
+        font-size: 19px;
         position: absolute;
         top: 750px;
         padding: 0px 50px;
@@ -297,11 +302,6 @@ li {list-style: none;
     justify-content: end;
 }
 
-#sobreMim {
-    margin-left: 100px;
-    width: 60%;
-}
-
 
 nav a::after {
     content: " ";
@@ -323,11 +323,6 @@ nav a:hover::after {
 main {
     margin-top: 220px;
     width: 100%;
-}
-
-
-.divH2 {
-    display: inline-block;
 }
 
 .nav-menu {
@@ -375,7 +370,11 @@ li {
 section {
     width: 100%;
     background-color: rgb(7, 7, 7);
-    height: 400px;
+    height: 480px;
+}
+
+#sobreMim {
+    width: 60%;
 }
 
 main {
@@ -390,7 +389,7 @@ h2 {
 }
 
 #sobreMim {
-    font-size: 17px;
+    font-size: 19px;
     position: absolute;
     top: 790px;
     right: 35%;
@@ -497,8 +496,6 @@ td {
 .td1 {
     border: 1px solid white;
 }
-
-
 
 }
 
