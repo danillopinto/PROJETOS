@@ -50,6 +50,53 @@
         margin-top: 330px;
     }
 
+    #divp1 {
+        display: none;
+    }
+
+    #p2 {
+        animation: type 3s alternate-reverse infinite steps(40) 1s,  piscaPisca 0.7s infinite ;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid #a74f03;
+        height: 40px;
+        text-shadow: 0px 0px 5px #a74f03;
+        font-size: 28px;
+        color: #a74f03;
+        width: 280px;
+        height: 35px;
+    }
+
+    @keyframes type {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 260px;
+        }
+    }
+
+    #divp2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #caixaG {
+        display: none;
+    }
+
+    .caixa2 {
+        width: 300px;
+        height: 192px;
+        background-color: rgba(187, 186, 186, 0.459);
+        border-radius: 15px;
+        margin-bottom: 37px;
+    }
+
+    #caixa12 {
+        margin-top: 400px;
+    }
+
 }
 
 @media screen and (min-width: 401px) {
@@ -63,6 +110,14 @@
     }
 
     #barraGGG {
+        display: none;
+    }
+
+    #caixaG2 {
+        display: none;
+    }
+
+    #divp2 {
         display: none;
     }
 
@@ -151,6 +206,33 @@
 
 @media screen and (max-width: 849px) {
 
+    #p1 {
+        animation: type 3s alternate-reverse infinite steps(40) 1s,  piscaPisca 0.7s infinite ;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid #a74f03;
+        height: 40px;
+        text-shadow: 0px 0px 5px #a74f03;
+        font-size: 30px;
+        color: #a74f03;
+        width: 260px;
+        height: 35px;
+    }
+
+    @keyframes type {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 260px;
+        }
+    }
+
+    #divp1 {
+        width: 100%;
+        text-align: center;
+    }
+
     .dc {
         display: none;
     }
@@ -170,17 +252,6 @@
         text-align: center;
         margin-top: 150px;
         height: 50px;
-    }
-
-    #p1{
-        font-size: 27px;
-        color: #a74f03;
-        text-shadow: 0px 0px 5px #a74f03;
-    }
-
-    #divpisca {
-        width: 100%;
-        text-align: center;
     }
 
     p {
@@ -242,35 +313,11 @@
         
     }
 
-    #pisca {
-        font-size: 30px;
-        color: #a74f03;
-        font-weight: 500;
-        animation: piscaPisca 0.7s infinite;
-    }
-
-    @keyframes piscaPisca {
-        0% {
-            color: #a74f03;
-            text-shadow: 0px 0px 5px #a74f03;
-        }
-        50% {
-            color: rgb(12, 12, 12);
-            text-shadow: 0px 0px 5px rgb(12, 12, 12);
-        }
-        100% {
-            color: #a74f03;
-            text-shadow: 0px 0px 5px #a74f03;
-        }
-    }
-
     .caixa {
         width: 300px;
         height: 190px;
         background-color: rgba(187, 186, 186, 0.459);
         border-radius: 15px;
-        margin-left: 50%;
-        transform: translate(-50%);
         margin-bottom: 37px;
     }
 
@@ -342,14 +389,44 @@ main {
 }
 
 @media (min-width: 850px) {
-    .dc {
-        width: 500px;
-        height: 500px;
-        z-index: 0;
-        position: absolute;
-        left: 50%;
-        top: 100px;
+
+    #p1 {
+        animation: type 3s alternate-reverse infinite steps(40) 1s,  piscaPisca 0.7s infinite ;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid #a74f03;
+        text-shadow: 0px 0px 5px #a74f03;
+        color: #a74f03;
+        height: 45px;
+        font-size: 35px;
+        width: 335px;
     }
+
+    @keyframes type {
+        from {
+            width: 0px;
+        }
+        to {
+            width: 335px;
+        }
+    }
+    
+
+    #divp1 {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 10%;
+    }
+    
+
+.dc {
+     width: 500px;
+     height: 500px;
+     z-index: 0;
+     position: absolute;
+     left: 50%;
+      top: 100px;
+}
 
     
 li {list-style: none;
@@ -464,17 +541,6 @@ h1 {
     margin-left: 10%;
 }
 
-#p1{
-    font-size: 35px;
-    color: #a74f03;
-    text-shadow: 0px 0px 5px #a74f03;
-}
-
-#divpisca {
-    margin-left: 10%;
-    margin-top: 8px;
-}
-
 p {
     display: inline-block;
 }
@@ -515,28 +581,6 @@ header {
     padding: 5px;
     height: 40px;
     width: 40px;
-}
-
-#pisca {
-    font-size: 34px;
-    color: #a74f03;
-    font-weight: 500;
-    animation: piscaPisca 0.7s infinite;
-}
-
-@keyframes piscaPisca {
-    0% {
-        color: #a74f03;
-        text-shadow: 0px 0px 5px #a74f03;
-    }
-    50% {
-        color: rgb(12, 12, 12);
-        text-shadow: 0px 0px 5px rgb(12, 12, 12);
-    }
-    100% {
-        color: #a74f03;
-        text-shadow: 0px 0px 5px #a74f03;
-    }
 }
 
 table {

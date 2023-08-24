@@ -154,10 +154,43 @@ h2 {
 }
 
 #caixaG {
-text-align: center;
+    text-align: center;
 }
 
 .caixa:hover {
+    .caixaD {
+        letter-spacing: 4px;
+        transition: 0.4s;
+    }
+}
+
+@keyframes piscaPisca {
+   from {
+    border-right-color: #a74f03;
+   }
+   to {
+    border-right-color: transparent;
+   }
+}
+
+.caixaD2 {
+    width: 100%;
+    height: 55px;
+    background-color: rgb(12, 12, 12);
+    transform: rotate(-50deg);
+    margin-top: 68px;
+}
+
+.PP2 {
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+#caixaG2 {
+text-align: center;
+}
+
+.caixa2:hover {
     .caixaD {
         letter-spacing: 4px;
         transition: 0.4s;
