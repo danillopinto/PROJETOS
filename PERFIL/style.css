@@ -360,15 +360,17 @@
 
     h3 {
         text-align: center;
-        margin-top: 60px;
-        font-size: 22px;
+        margin-top: 40px;
+        font-size: 23px;
         color: #a74f03;
     }
 
-    .hb {
+    .habil {
         position: relative;
         left: 50%;
         transform: translate(-50%);
+        text-align: center;
+        padding: 0 78px;
     }
 }
 
