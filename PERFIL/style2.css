@@ -85,11 +85,6 @@ body, html {
     display: block;
 }
 
-article {
-    width: 100%;
-    background-color: rgb(12, 12, 12);
-}
-
 #projetos {
     position: absolute;
     left: 50%;
@@ -193,11 +188,6 @@ footer {
 }
 
 .habil {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
-#read_buton {
-    width: 200px;
-    height: 60px;
-    background-color: #a74f03;
-}
