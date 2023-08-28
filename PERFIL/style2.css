@@ -26,6 +26,10 @@ body, html {
     scroll-behavior: smooth;
 }
 
+main {
+    background-color: rgb(12, 12, 12);
+}
+
 .hamburguer {
     cursor: pointer;
     position: fixed;
@@ -162,10 +166,6 @@ h2 {
     font-size: 20px;
 }
 
-#caixaG2 {
-text-align: center;
-}
-
 .caixa2:hover {
     .caixaD {
         letter-spacing: 4px;
@@ -176,18 +176,30 @@ text-align: center;
 aside {
     margin-top: 50px;
     width: 100%;
-    height: 580px;
+    height: 100%;
     background-color: rgb(7, 7, 7);
-    overflow: hidden;
+}
+
+#mais {
+    display: none;
 }
 
 footer {
     width: 100%;
-    height: 500px;
+    height: 50px;
     background-color: rgb(12, 12, 12) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #a74f03;
 }
 
 .habil {
     margin-top: 15px;
 }
+
 

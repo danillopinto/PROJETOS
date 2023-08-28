@@ -233,6 +233,23 @@
 
 @media screen and (max-width: 849px) {
 
+    #boss {
+        display: none;
+    }
+
+    #JS {
+        display: none;
+     }
+    
+     #react {
+        display: none;
+     }
+
+    #imgHC {
+
+        display: none;
+     }
+
     article {
         width: 100%;
         background-color: rgb(12, 12, 12);
@@ -241,9 +258,9 @@
     }
 
     #habilidades {
-        width: 100%;
         text-align: center;
         margin-top: 50px;
+        width: 100%;
     }
 
     #p1 {
@@ -380,38 +397,29 @@
         width: 70%;
     }
 
-    #read_buton1 {
-        width: 100px;
-        height: 40px;
-        border: 1px solid #a74f03;
-        background-color: rgba(7, 7, 7, 0.842);
-        color: white;
-        position: absolute;
-        top: 1700px;
-        left: 50%;
-        transform: translate(-50%);
-        
-    }
-
-    #divButon {
-        width: 100%;
-        height: 80px;
-        background-color: rgba(7, 7, 7, 0.801);
-        position: absolute;
-        top: 2280px;
-        text-align: center;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
     #read_buton2 {
         width: 100px;
         height: 40px;
         border: 1px solid #a74f03;
         background-color: rgba(7, 7, 7, 0.842);
         color: white;
-        margin-top: 10px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-top: 20px;
+        transition: 0.5s;
     }
+
+
+
+    #read_buton2:hover {
+        box-shadow: 0px 0px 5px #a74f03;
+        transition: 0.5s;
+    }
+
 }
 
 /*TELA GRANDE*/
@@ -477,6 +485,40 @@ main {
 }
 
 @media (min-width: 850px) {
+
+    #read_buton2 {
+        width: 100px;
+        height: 40px;
+        border: 1px solid #a74f03;
+        background-color: rgba(7, 7, 7, 0.842);
+        color: white;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-top: 50px;
+        transition: 0.5s;
+    }
+
+    #read_buton2:hover {
+        box-shadow: 0px 0px 5px #a74f03;
+        transition: 0.5s;
+    }
+
+    h3 {
+        margin-left: 10%;
+        margin-top: 60px;
+        font-size: 25px;
+        color: #a74f03;
+    }
+
+    .habil {
+        width: 45%;
+        margin-left: 10%;
+        font-size: 17px;
+    }
 
     #habilidades {
         width: 100%;
@@ -708,6 +750,38 @@ td {
 
 #caixaG {
     margin-top: 150px;
-}
+} 
+
+ #imgHC {
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    left: 65%;
+    top: 1680px;
+ }
+
+ #JS {
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    left: 65%;
+    top: 1920px;
+ }
+
+ #react {
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    left: 65%;
+    top: 2130px;
+ }
+
+ #boss {
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    left: 65%;
+    top: 2350px;
+ }
 
 }
