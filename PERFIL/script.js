@@ -12,17 +12,21 @@ function vermais() {
     var maisTexto = document.getElementById("mais");
     var read_buton2 = document.getElementById("read_buton2");
     var aside = document.querySelector("aside")
+    var footer = document.querySelector("footer")
+
 
     if (pontos.style.display == "none") { 
         pontos.style.display="inline";
         maisTexto.style.display="none";
         read_buton2.innerHTML="Ver mais";
         aside.style.height="530px"
+        footer.style.height="50px"
 
     }else {
         pontos.style.display="none";
         maisTexto.style.display="inline";
         read_buton2.innerHTML="Ver menos";
         aside.style.height="100%"
+        footer.style.height="50px"
     }
 }
