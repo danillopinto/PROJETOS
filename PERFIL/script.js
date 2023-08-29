@@ -19,7 +19,7 @@ function vermais() {
         pontos.style.display="inline";
         maisTexto.style.display="none";
         read_buton2.innerHTML="Ver mais";
-        aside.style.height="530px"
+        aside.style.height="100%"
         footer.style.height="50px"
 
     }else {

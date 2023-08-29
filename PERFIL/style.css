@@ -798,4 +798,21 @@ td {
     top: 2350px;
  }
 
+ #git2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 65%;
+    top: 2580px;
+    background-color: rgb(7, 7, 7);
+ }
+
+ #hub {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: 76%;
+    top: 2580px;
+ }
+
 }
