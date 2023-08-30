@@ -241,10 +241,6 @@
 
 @media screen and (max-width: 849px) {
 
-    #boss {
-        display: none;
-    }
-
     #git2 {
         display: none;
      }
@@ -794,20 +790,12 @@ td {
     top: 2130px;
  }
 
- #boss {
-    width: 210px;
-    height: 210px;
-    position: absolute;
-    left: 65%;
-    top: 2350px;
- }
-
  #git2 {
     width: 200px;
     height: 200px;
     position: absolute;
     left: 65%;
-    top: 2580px;
+    top: 2340px;
     background-color: rgb(7, 7, 7);
  }
 
