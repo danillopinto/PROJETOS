@@ -17,8 +17,18 @@
         display: none;
     }
 
-    #caixa1 {
-        margin-top: 200px;
+    #proje2 {
+        width: 320px;
+        height: 190px;
+        box-shadow: 0px 0px 10px #a74f03;
+        border-radius: 15px;
+        cursor: grab;
+    }
+
+    #caixaG2 {
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
     }
 
     #proje {
@@ -219,6 +229,7 @@
         bottom: 0;
         left: 0;
         background-image: linear-gradient(to right, #241101, #a74f03);
+        transition: 0.4s;
     }
 
     nav a:hover::after {
@@ -379,7 +390,7 @@
     }
 
     .caixa {
-        width: 300px;
+        width: 320px;
         height: 190px;
         background-color: rgba(187, 186, 186, 0.459);
         border-radius: 15px;
@@ -387,7 +398,6 @@
     }
 
     #caixaG {
-        display: inline-block;
         margin-top: 180px;
         margin-left: 50%;
         transform: translate(-50%);
@@ -764,6 +774,9 @@ td {
 
 #caixaG {
     margin-top: 150px;
+    display: flex;
+    justify-content: center;
+
 } 
 
  #imgHC {
