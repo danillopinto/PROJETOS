@@ -24,6 +24,7 @@ body, html {
     color: white;
     font-family: font11, Helvetica, sans-serif ;
     scroll-behavior: smooth;
+    min-height: 100vh;
 }
 
 main {
