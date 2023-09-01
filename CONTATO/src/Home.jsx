@@ -1,61 +1,46 @@
-import { useDeferredValue } from "react";
+import { useDeferredValue, useState } from "react";
 
 function Home() {
 
+  const [nameInput, setNameInput] = useState('')
+  const [emailInput, setEmailInput] = useState('')
+  const [assuntoInput, setAssuntoInput] = useState('')
+  const [msgInput, setMsgInput] = useState('')
+
+  const handleNameInputChange = (event) => setNameInput(event.target.value)
+  const handleEmailInputChange = (event) => setEmailInput(event.target.value)
+  const handleAssuntoInputChange = (event) => setAssuntoInput(event.target.value)
+  const handleMsgInputChange = (event) => setMsgInput(event.target.value)
+
+  function botao(event) {
+    event.preventDefault()
+
+    console.log(nameInput)
+    console.log(emailInput)
+    console.log(assuntoInput)
+    console.log(msgInput)
+  }
+
   return (
     <div>
-      <div id="form">
- 
-            <div id="barraP1">
-                <div class="barraP1"></div>
-                <div class="barraP1"></div>
-                <div class="barraP1"></div>
-            </div>
- 
-               <h1>Contato</h1>
-    
-            <div id="barraP2">
-                <div class="barraP2"></div>
-                <div class="barraP2"></div>
-                <div class="barraP2"></div>
-            </div>
 
-            <input type="text" placeholder="Digite seu nome e sobrenome" class="input123" id="input1"/>
-            <input type="text" placeholder="Digite seu e-mail" class="input123" id="input2"/>
-            <input type="text" placeholder="Digite o assunto" class="input123" id="input3"/>
-            <input type="text" placeholder="Sua mensagem" id="input4" />
-            
-            <div>
-                <input type="submit" value={"Enviar"} id="bnt" />
-            </div>
-      </div>
+      <form>
+          <h1>Contato</h1>  
+
+          <input type="text" placeholder="Digite seu nome e sobrenome" class="input123" id="input1" name="name" onChange={handleNameInputChange}/>
+
+          <input type="text" placeholder="Digite seu e-mail" class="input123" id="input2" name="email" onChange={handleEmailInputChange}/>
+
+          <input type="text" placeholder="Digite o assunto" class="input123" id="input3" name="assunto" onChange={handleAssuntoInputChange}/>
+
+          <input type="text" placeholder="Sua mensagem" id="input4"  name="msg" onChange={handleMsgInputChange}/>
+
+          <button id="bnt" onClick={botao}>Enviar</button>
+          
+      </form>
 
     </div>
   )
 }
-
-const botao = document.querySelector("#bnt")
-
-botao.addEventListener("click", function(e){
-
-  e.preventDefault();
-
-  const name = document.querySelector("#input1");
-  const value1 = name.value;
-  console.log(value1);
-
-  const email = document.querySelector("#input2");
-  const value2 = email.value;
-  console.log(value2);
-
-  const assunto = document.querySelector("#input3");
-  const value3 = assunto.value;
-  console.log(value3);
-
-  const msg = document.querySelector("#input4");
-  const value4 = msg.value;
-  console.log(value4);
-
-})
 
 export default Home
