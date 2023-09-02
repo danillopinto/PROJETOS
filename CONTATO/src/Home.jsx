@@ -25,11 +25,11 @@ function Home() {
       <form>
           <h1>Contato</h1>  
 
-          <input type="text" placeholder="Digite seu nome e sobrenome" class="input123" id="input1" name="name" onChange={handleNameInputChange}/>
+          <input type="text" placeholder="Digite seu nome e sobrenome" className="input123" id="input1" name="name" onChange={handleNameInputChange}/>
 
-          <input type="text" placeholder="Digite seu e-mail" class="input123" id="input2" name="email" onChange={handleEmailInputChange}/>
+          <input type="text" placeholder="Digite seu e-mail" className="input123" id="input2" name="email" onChange={handleEmailInputChange}/>
 
-          <input type="text" placeholder="Digite o assunto" class="input123" id="input3" name="assunto" onChange={handleAssuntoInputChange}/>
+          <input type="text" placeholder="Digite o assunto" className="input123" id="input3" name="assunto" onChange={handleAssuntoInputChange}/>
 
           <input type="text" placeholder="Sua mensagem" id="input4"  name="msg" onChange={handleMsgInputChange}/>
 
