@@ -15,10 +15,8 @@ function Home() {
   function botao(event) {
     event.preventDefault()
 
-    console.log(nameInput)
-    console.log(emailInput)
-    console.log(assuntoInput)
-    console.log(msgInput)
+    console.log(nameInput, emailInput, assuntoInput, msgInput )
+    
   }
 
   return (
