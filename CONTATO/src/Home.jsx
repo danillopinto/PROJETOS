@@ -2,10 +2,10 @@ import { useDeferredValue, useState } from "react";
 
 function Home() {
 
-  const [nameInput, setNameInput] = useState('')
-  const [emailInput, setEmailInput] = useState('')
-  const [assuntoInput, setAssuntoInput] = useState('')
-  const [msgInput, setMsgInput] = useState('')
+  const [nameInput, setNameInput] = useState("")
+  const [emailInput, setEmailInput] = useState("")
+  const [assuntoInput, setAssuntoInput] = useState("")
+  const [msgInput, setMsgInput] = useState("")
 
   const handleNameInputChange = (event) => setNameInput(event.target.value)
   const handleEmailInputChange = (event) => setEmailInput(event.target.value)
@@ -16,7 +16,7 @@ function Home() {
     event.preventDefault()
 
     console.log(nameInput, emailInput, assuntoInput, msgInput )
-    
+
   }
 
   return (
