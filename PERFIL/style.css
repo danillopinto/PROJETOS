@@ -216,7 +216,7 @@
         text-align: center;
         flex-direction: column;
         width: 100%;
-        transition: 0.3s;
+        transition: 0.4s;
         padding-bottom: 10px;
     }
 
@@ -807,8 +807,23 @@ td {
     width: 200px;
     height: 200px;
     position: absolute;
-    left: 65%;
+    left: 66%;
     top: 2340px;
+    background-color: rgb(7, 7, 7);
+ }
+
+ #styled {
+    position: absolute;
+    left: 64%;
+    top: 2610px;
+    background-color: rgb(7, 7, 7);
+ }
+
+ #scrum {
+    width: 300px;
+    position: absolute;
+    left: 64%;
+    top: 2810px;
     background-color: rgb(7, 7, 7);
  }
 
