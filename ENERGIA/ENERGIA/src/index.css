@@ -1,0 +1,83 @@
+/*@charset "UTF-8";
+
+@font-face {
+    font-family: 'font11';
+    src: url('Saira-VariableFont_wdth,wght.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: 'font10' ;
+    src: url('Patrima-Outline.otf') format('OpenType');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #152026;
+    color: white;
+    width: 100vw;
+    font-family: font11, Helvetica, sans-serif;
+}
+
+header {
+    width: 100vw;
+    text-align: center;
+}
+
+@media (max-width: 1000px){
+
+    h1 {
+        font-size: 50px;
+        margin-top: 100px;
+    }
+
+    #p1 {
+        font-size: 7px;
+        letter-spacing: 5px;
+        position: absolute;
+        top: 165px;
+        left: 50%;
+        transform: translate(-50%);
+        color: #F24405;
+        text-shadow: 0 0 10px #F24405;
+    }
+
+    h2 {
+        font-size: 45px;
+        font-weight: 400;
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    strong {
+        color: #F24405;
+        text-shadow: 0 0 5px #F24405;
+    }
+
+    input {
+        width:280px;
+        height: 50px;
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: 50px;
+        background-color: #F24405;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    input:hover {
+        width: 300px;
+        height: 60px;
+        transition: .3s;
+        font-size: 18px;
+    }
+
+}
+*/
